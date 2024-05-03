@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #b19cd9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main_input {
+    height: 440px;
+    width: 350px;
+    border-radius: 10px;
+    background: #b19cd9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -10px -10px 25px rgba(211, 189, 250, 0.815), 10px 10px 25px 0 rgba(0, 0, 0, 0.233);
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+}
+.main_input h1 {
+    font-size: 18px;
+    background: #b19cd9;
+    color: #5c3d94;
+    margin: 20px;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    box-shadow: -10px -10px 25px rgba(211, 189, 250, 0.815), 10px 10px 25px 0 rgba(0, 0, 0, 0.233);
+}
+.form input {
+    margin: 12px 20px;
+}
+
+.input_box {
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    background: #b19cd9;
+    border-radius: 15px;
+    width: 240px;
+    color: rgb(255, 255, 255);
+    box-shadow: -6px -6px 25px 0 rgba(227, 211, 255, 0.699), 6px 6px 25px 0 rgba(0, 0, 0, 0.247);
+    transition: .6s;
+    margin: 12px ;
+    &:focus{
+        width: 260px;
+        box-shadow: -6px -6px 25px 0 rgba(205, 177, 255, 0.5), inset 6px 6px 25px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+.input_box::placeholder {
+    color: #594186;
+    font-weight: bolder;
+}
+.forget_pass,
+.signup
+.login{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.forget_pass a,
+.signup a
+.login a{
+    transition: .3s;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.forget_pass a,
+.signup a
+,.login a{
+    color: #594186;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+}
+.login{
+    margin-left: 100px;
+}
+.input_group{
+    display: flex;
+    align-items: center;
+}
+.input_group .forget_pass{
+    margin-right: 68px;
+    margin-top: 18px;
+}
+
+
+.login-box{
+    margin: 25px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #f1f1f1;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    background: linear-gradient(145deg, #5b0085, #6c009e);
+    box-shadow: 20px 20px 60px #cb8ee7, -10px -10px 60px #d3bbfeb2;
+}
+
+.login-box:hover {
+    width: 180px;
+}
